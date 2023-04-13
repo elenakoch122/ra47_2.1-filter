@@ -1,0 +1,40 @@
+.App {
+  padding: 32px 88px;
+}
+
+.toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+}
+
+.toolbar__button {
+  padding: 8px 16px;
+  color: #555;
+  background-color: #fff;
+  border: 1px solid #555;
+  transition: .3s;
+  cursor: pointer;
+}
+
+.toolbar__button:not(:last-child) {
+  margin-right: 8px;
+}
+
+.toolbar__button:hover, .button_selected {
+  color: #fff;
+  background-color: #555;
+  border-color: #fff;
+}
+
+.projectList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.projectList__img {
+  width: 30%;
+  object-fit: contain;
+}

@@ -17,8 +17,7 @@ export default class Portfolio extends Component {
   }
 
   projectsList() {
-    const projectsFiltered = data.filter(d => d.category === this.state.filter);
-    return projectsFiltered.length === 0 ? data : projectsFiltered;
+    return this.state.filter === 'All' ? data : data.filter(d => d.category === this.state.filter);
   }
 
   render() {
